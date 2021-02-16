@@ -69,18 +69,18 @@
 @media screen and (max-width: 500px) {
 
     .name-profile {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .big-text {
-        font-size: 13px;
+        font-size: 9px;
     }
 
     .normal-text {
-        font-size: 10px;
+        font-size: 8px;
     }
     
     .small-text {
-        font-size: 10px;
+        font-size: 7px;
     }
 }
