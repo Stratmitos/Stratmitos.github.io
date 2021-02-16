@@ -1,0 +1,86 @@
+.photo-profile {
+    max-width: 130px; 
+    height: auto;
+    display: inline;
+}
+
+.name-profile {
+    font-size: 50px;
+    font-family: 'Aldrich', sans-serif;
+}
+
+.big-text {
+    font-size: 25px;
+    font-family: 'Aldrich', sans-serif;
+}
+
+.normal-text {
+    font-size: 20px;
+    font-family: 'Aldrich', sans-serif;
+}
+
+.small-text {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .photo-profile {
+        max-width: 100px;
+    }
+
+    .name-profile {
+        font-size: 30px;
+    }
+
+    .big-text {
+        font-size: 20px;
+    }
+
+    .normal-text {
+        font-size: 12px;
+    }
+
+    .small-text {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .name-profile {
+        font-size: 20px;
+    }
+
+    .big-text {
+        font-size: 18px;
+    }
+
+    .normal-text {
+        font-size: 10px;
+    }
+
+    .small-text {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .name-profile {
+        font-size: 15px;
+    }
+
+    .big-text {
+        font-size: 13px;
+    }
+
+    .normal-text {
+        font-size: 10px;
+    }
+    
+    .small-text {
+        font-size: 10px;
+    }
+}

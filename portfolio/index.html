@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8ad8e323f8.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+    <title>Portfolio</title>
+  </head>
+  <body style="background-image: url('img/web-component/bg-body.png'); background-repeat: repeat;">
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.8);">
+      <img src="img/web-component/photo-profile.jpg" class="float-start img-thumbnail photo-profile me-3 pt-1" alt="photo-profile">
+      <div class="row">
+        <div class="col-sm-12">
+          <span class="name-profile text-body">Muhammad Faisal Winarto</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <span class="normal-text text-body">
+            <i class="far fa-envelope"></i> faisalwinarto@gmail.com
+          </span>
+        </div>
+        <div class="col-sm-6">
+          <span class="normal-text text-body">
+            <i class="fab fa-whatsapp"></i> 0858-8699-4501
+          </span>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-sm-12">
+          <span class="normal-text text-body">
+            <i class="far fa-address-card"></i> ABOUT ME:
+          </span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 overflow-auto" style="max-height: 50px; text-align: justify;">
+          <span class="small-text text-secondary">
+            I was born in Tangerang, 29 January 1999, and still live in Tangerang. The most fun thing on my life is learn what I want to learn or need, programming is one of them.
+            A lot of fun thing happened while I'm learning this, until now stack overflow is one of my best friend.
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container mt-3 p-2" style="background-color: rgba(255, 255, 255, 0.8);">
+      <ul class="nav nav-pills nav-fill mb-3" id="pills-tab">
+        <li class="nav-item">
+          <button class="btn btn-secondary active bg-secondary" style="width:95%;" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" aria-selected="true">
+            <i class="far fa-file-code"></i> Skills
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-secondary bg-secondary" style="width:95%;" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" aria-selected="false">
+            <i class="far fa-building"></i> Experience
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-secondary bg-secondary" style="width:95%;" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" aria-selected="false">
+            <i class="far fa-star"></i> Achievement
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home">
+          <div class="card border border-success">
+            <span class="card-header big-text">PHP</span>
+            <div class="card-body">
+              <span class="card-title normal-text">Codeigniter</span>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card border border-success mt-3">
+            <span class="card-header big-text">Javascript</span>
+            <div class="card-body">
+              <span class="card-title normal-text">JQuery</span>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-success" style="width: 70%"></div>
+              </div>
+              <span class="card-title normal-text">ReactJS</span>
+              <div class="progress">
+                <div class="progress-bar bg-warning" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border border-success mt-3">
+            <span class="card-header big-text">HTML & CSS</span>
+            <div class="card-body">
+              <span class="card-title normal-text">Bootstrap</span>
+              <div class="progress">
+                <div class="progress-bar bg-warning" style="width: 50%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile">
+          <div class="card border border-success">
+            <div class="card-header">
+              <span class="big-text">Field Practice</span>
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <span class="normal-text">PT. Surya Toto Indonesia</span>
+                <footer class="blockquote-footer mt-1 small-text">Entering Data Process | January - February 2016</footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="card border border-success mt-3">
+            <div class="card-header">
+              <span class="big-text">Internship</span>
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <span class="normal-text">PT. Tera Data Indonusa</span>
+                <footer class="blockquote-footer mt-1 small-text">Web Programmer | September 2020 - January 2021</footer>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="card border border-success mt-3">
+            <div class="card-header">
+              <span class="big-text">Other</span>
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <span class="normal-text">San Andreas Multiplayer Garuda Indonations</span>
+                <footer class="blockquote-footer mt-1 small-text">Developer | Mei 2015 - Present</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact">
+          <div class="card border border-success mt-3">
+            <div class="card-header">
+              <span class="big-text">Training</span>
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <span class="normal-text">Junior Web Programmer</span>
+                <footer class="blockquote-footer mt-1 small-text">BPPTIK - Kementrian Komunikasi dan Informatika | 26 April 2019</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
