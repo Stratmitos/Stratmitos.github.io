@@ -51,6 +51,7 @@ $(function(){
                                     $('#input-phone-number').val(value.phoneNumber);
                                     $("#input-email").val(value.email);
                                     $("#textarea-address").val(value.address);
+                                    $("#textarea-notes").val(value.notes);
 
                                     $('#modal-entry').modal({backdrop: 'static', keyboard: false}, "show");
                                     bankAccount = allData[index].dataBankAccount.slice();
@@ -247,7 +248,6 @@ $(function(){
                 ClearFormBankAccount();
                 ClearFormEntry();
 
-                selectedReport = null;
                 bankAccount = Array();
 
                 tableReport.clear().rows.add(allData).draw().columns.adjust();
