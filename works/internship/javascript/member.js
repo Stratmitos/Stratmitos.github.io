@@ -55,7 +55,6 @@ $(function(){
                                     $('#modal-entry').modal({backdrop: 'static', keyboard: false}, "show");
                                     bankAccount = allData[index].dataBankAccount.slice();
                                     tableBankAccount.clear().rows.add(bankAccount).draw().columns.adjust();
-                                    console.log(value);
                                     return false;
                                 }
                                 else
@@ -306,25 +305,6 @@ $(function(){
         timerNotifModal = setTimeout(function(){
             $('#'+notifid).removeClass("show");
         }, 4500);
-    }
-
-    function ShowNotifMainPage(message, isError = false)
-    {
-        $("#notif-main-page").collapse('show');
-        if(isError)
-            $("#notif-content-main-page").removeClass('alert-success').addClass('alert-danger').html('<i class="fas fa-exclamation-circle"></i> '+message);
-        else
-            $("#notif-content-main-page").removeClass('alert-danger').addClass('alert-success').html('<i class="fas fa-exclamation-circle"></i> '+message);
-        
-        timerNotifMainPage = setTimeout(function(){
-            $("#notif-main-page").collapse('hide');
-        }, 4500);
-    }
-
-    function HideNotifMainPage()
-    {
-        clearTimeout(timerNotifMainPage);
-        $("#notif-main-page").collapse('hide');
     }
 
     function isInputValueValid(valueName, value, idMsgElement, numberOnly = false, maxLength = 999999, minLength = 1) {
