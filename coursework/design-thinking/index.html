@@ -5,868 +5,891 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="bg-base-200">
-        <div class="container mx-auto pb-5 bg-base-100">
-            <div class="navbar">
-                <div class="navbar-start">
-                    <details class="dropdown">
-                        <summary tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-                        </summary>
-                        <ul tabindex="0" class="menu menu-lg dropdown-content mt-3 z-[9999] p-2 shadow bg-base-100 rounded-box w-72 border border-blue-300">
-                            <li><a onclick="modal_info.showModal()">
-                                <svg class="h-6 w-6 text-base"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z"/>  
-                                    <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />  
-                                    <line x1="12" y1="11" x2="12" y2="11.01" />  
-                                    <line x1="8" y1="11" x2="8" y2="11.01" />  
-                                    <line x1="16" y1="11" x2="16" y2="11.01" />
-                                </svg>
-                                Proses Emphaty
-                            </a></li>
-                            <li><a onclick="modal_info.showModal()">
-                                <svg class="h-6 w-6 text-base"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/>
-                                  </svg>
-                                  
-                                Emphaty Map
-                            </a></li>
-                            <li><a onclick="modal_info.showModal()">
-                                <svg class="h-6 w-6 text-base"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z"/>
-                                    <path d="M3.5 5.5l1.5 1.5l2.5 -2.5" />
-                                    <path d="M3.5 11.5l1.5 1.5l2.5 -2.5" />
-                                    <path d="M3.5 17.5l1.5 1.5l2.5 -2.5" />
-                                    <line x1="11" y1="6" x2="20" y2="6" />
-                                    <line x1="11" y1="12" x2="20" y2="12" />
-                                    <line x1="11" y1="18" x2="20" y2="18" />
-                                </svg>
-                                Proses Define
-                            </a></li>
-                            <li><a onclick="modal_info.showModal()">
-                                <svg class="h-6 w-6 text-base"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z"/> 
-                                    <path d="M3 12h1M12 3v1M20 12h1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7" /> 
-                                    <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" />
-                                    <line x1="9.7" y1="17" x2="14.3" y2="17" />
-                                </svg>
-                                Proses Ideation
-                            </a></li>
-                            <li><a onclick="modal_info.showModal()">
-                                <svg class="h-6 w-6 text-base" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <line x1="12" y1="16" x2="12" y2="12" />
-                                    <line x1="12" y1="8" x2="12.01" y2="8" />
-                                </svg>
-                                Informasi Prototype
-                            </a></li>
-                            <li><a>
-                                <svg class="h-6 w-6 text-base"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"> 
-                                    <circle cx="12" cy="12" r="10" />
-                                    <polyline points="12 8 8 12 12 16" />
-                                    <line x1="16" y1="12" x2="8" y2="12" />
-                                </svg>
-                                Kembali ke Portfolio
-                            </a></li>
-                        </ul>
-                    </details>
-                </div>
-                <div class="navbar-center">
-                    
-                </div>
-                <div class="navbar-end">
-                    <a class="btn btn-ghost no-animation text-xl">E-Learning Budi Luhur</a>
-                </div>
-            </div>
-
-            <div class="divider divider-info px-5">Pendahuluan</div>
-            <div class="px-5"> <!-- Tentang Design Thinking -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Tentang Design Thinking
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="mt-4">
-                            <p>
-                                Salam Budi Luhur,<br/>
-                                Selamat bergabung dalam mata kuliah Design Thinking!<br/><br/>
-                                Mata kuliah ini merupakan mata kuliah wajib bagi mahasiswa jurusan Desain komunikasi
-                                visual dengan bobot 3 SKS.<br/><br/>
-                                Perkuliahan Design Thinking akan mempelajari proses berfikir desain dalam merancang
-                                suatu solusi dari suatu masalah, tahapan-tahapan dalam berfikir desain dan teknik
-                                yang dapat dilakukan dalam merancang sebuah solusi yang dapat sesuai dengan kebutuhan user.
-                                <br/><br/>
-                                Tujuan perkuliahan yaitu mahasiswa dapat menggunakan proses berfikir design thinking
-                                dalam merancang sebuah produk (barang/ jasa) sebagai solusi yang sesuai dengan kebutuhan user.
-                                <br/><br/>
-                                <a href="https://chat.whatsapp.com/DRsckxq7DzfA1LloBUZtoM" class="link link-success" target="_blank">
-                                    Link untuk bergabung ke grup WhatsApp.
-                                </a><br/>
-                            </p>
+        <div class="drawer">
+            <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
+            <div class="drawer-content flex flex-col">
+                <div class="container mx-auto pb-5 bg-base-100">
+                <!-- Navbar -->
+                    <div class="navbar">
+                        <div class="navbar-start">
+                            <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                            </label>
+                        </div>
+                        <div class="navbar-center">
+                            
+                        </div>
+                        <div class="navbar-end">
+                            <a class="btn btn-ghost no-animation text-xl">E-Learning Budi Luhur</a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="px-5 mt-5"> <!-- Profile Dosen -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Profile Dosen
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="hero">
-                            <div class="hero-content flex-col sm:flex-row text-center sm:text-left">
-                                <img src="img/web-component/Koyuki.png" class="w-36 h-44 sm:w-52 sm:h-60 rounded-lg shadow-2xl" />
-                                <div>
-                                    <h1 class="sm:text-2xl md:text-3xl lg:text-4xl font-bold">Kurosaki Koyuki, M.Ds.</h1>
-                                    <p class="py-6 text-xs sm:text-base">
-                                        S1 & S2 FSRD Kivotos International University<br/>
-                                        Tenaga pengajar pada FKDK Universitas Budi Luhur dan telah mengampuh mata 
-                                        kuliah Design Thinking mulai 2020.<br/>
-                                        <a href="mailto:kurosaki.koyuki@budiluhur.ac.id" class="text-[10] sm:text-base link" target="_blank">
-                                            kurosaki.koyuki@budiluhur.ac.id
-                                        </a>
+                <!-- End of Navbar -->
+                <!-- Content -->
+                    <div class="divider divider-info px-5">Pendahuluan</div>
+                    <div class="px-5"> <!-- Tentang Design Thinking -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Tentang Design Thinking
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="mt-4">
+                                    <p>
+                                        Salam Budi Luhur,<br/>
+                                        Selamat bergabung dalam mata kuliah Design Thinking!<br/><br/>
+                                        Mata kuliah ini merupakan mata kuliah wajib bagi mahasiswa jurusan Desain komunikasi
+                                        visual dengan bobot 3 SKS.<br/><br/>
+                                        Perkuliahan Design Thinking akan mempelajari proses berfikir desain dalam merancang
+                                        suatu solusi dari suatu masalah, tahapan-tahapan dalam berfikir desain dan teknik
+                                        yang dapat dilakukan dalam merancang sebuah solusi yang dapat sesuai dengan kebutuhan user.
+                                        <br/><br/>
+                                        Tujuan perkuliahan yaitu mahasiswa dapat menggunakan proses berfikir design thinking
+                                        dalam merancang sebuah produk (barang/ jasa) sebagai solusi yang sesuai dengan kebutuhan user.
+                                        <br/><br/>
+                                        <a href="https://chat.whatsapp.com/DRsckxq7DzfA1LloBUZtoM" class="link link-success" target="_blank">
+                                            Link untuk bergabung ke grup WhatsApp.
+                                        </a><br/>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="divider divider-info px-5">Daftar Materi</div>
-            <div class="px-5"> <!-- Pertemuan 1 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 1 | Pengantar Design Thinking
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Kamis, 05/10/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-success gap-2">
-                                HADIR
+                    <div class="px-5 mt-5"> <!-- Profile Dosen -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Profile Dosen
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="hero">
+                                    <div class="hero-content flex-col sm:flex-row text-center sm:text-left">
+                                        <img src="img/web-component/Koyuki.png" class="w-36 h-44 sm:w-52 sm:h-60 rounded-lg shadow-2xl" />
+                                        <div>
+                                            <h1 class="sm:text-2xl md:text-3xl lg:text-4xl font-bold">Kurosaki Koyuki, M.Ds.</h1>
+                                            <p class="py-6 text-xs sm:text-base">
+                                                S1 & S2 FSRD Kivotos International University<br/>
+                                                Tenaga pengajar pada FKDK Universitas Budi Luhur dan telah mengampuh mata 
+                                                kuliah Design Thinking mulai 2020.<br/>
+                                                <a href="mailto:kurosaki.koyuki@budiluhur.ac.id" class="text-[10] sm:text-base link" target="_blank">
+                                                    kurosaki.koyuki@budiluhur.ac.id
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
                     </div>
-                </div>
-            </div>
-            <div class="px-5 pt-5"> <!-- Pertemuan 2 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 2 | Filosofi, Prinsip & Tahapan Design Thinking
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Kamis, 12/10/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-error gap-2">
-                                Tidak Hadir
+                    <div class="divider divider-info px-5">Daftar Materi</div>
+                    <div class="px-5"> <!-- Pertemuan 1 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 1 | Pengantar Design Thinking
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Kamis, 05/10/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-success gap-2">
+                                        HADIR
+                                    </div>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
                             </div>
                         </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
                     </div>
-                </div>
-            </div>
-            <div class="px-5 pt-5"> <!-- Pertemuan 3 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 3 | Inovasi
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Rabu, 18/10/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-info gap-2">
-                                Belum melakukan presensi
+                    <div class="px-5 pt-5"> <!-- Pertemuan 2 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 2 | Filosofi, Prinsip & Tahapan Design Thinking
                             </div>
-                            <br/>
-                        </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
-                    </div>
-                </div>
-            </div>
-            <div class="px-5 pt-5"> <!-- Pertemuan 4 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 4 | Tahapan Design Thinking
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Kamis, 26/10/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-secondary gap-2">
-                                Presensi belum dibuka
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Kamis, 12/10/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-error gap-2">
+                                        Tidak Hadir
+                                    </div>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
                             </div>
                         </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
                     </div>
-                </div>
-            </div>
-            <div class="px-5 pt-5"> <!-- Pertemuan 5 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 5 | Personas
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Kamis, 26/10/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-secondary gap-2">
-                                Presensi belum dibuka
+                    <div class="px-5 pt-5"> <!-- Pertemuan 3 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 3 | Inovasi
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Rabu, 18/10/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-info gap-2">
+                                        Belum melakukan presensi
+                                    </div>
+                                    <br/>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
                             </div>
                         </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
                     </div>
-                </div>
-            </div>
-            <div class="px-5 pt-5"> <!-- Pertemuan 6 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 6 | Emphatize
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Kamis, 02/11/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-secondary gap-2">
-                                Presensi belum dibuka
+                    <div class="px-5 pt-5"> <!-- Pertemuan 4 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 4 | Tahapan Design Thinking
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Kamis, 26/10/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-secondary gap-2">
+                                        Presensi belum dibuka
+                                    </div>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
                             </div>
                         </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
                     </div>
-                </div>
-            </div>
-            <div class="px-5 pt-5"> <!-- Pertemuan 7 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 7 | Emphaty Map
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Kamis, 09/11/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-secondary gap-2">
-                                Presensi belum dibuka
+                    <div class="px-5 pt-5"> <!-- Pertemuan 5 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 5 | Personas
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Kamis, 26/10/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-secondary gap-2">
+                                        Presensi belum dibuka
+                                    </div>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
                             </div>
                         </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
                     </div>
-                </div>
-            </div>
-            <div class="px-5 pt-5"> <!-- Pertemuan 8 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 8 | UTS & Define
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Rabu, 22/11/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-secondary gap-2">
-                                Presensi belum dibuka
+                    <div class="px-5 pt-5"> <!-- Pertemuan 6 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 6 | Emphatize
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Kamis, 02/11/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-secondary gap-2">
+                                        Presensi belum dibuka
+                                    </div>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
                             </div>
                         </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
                     </div>
-                </div>
-            </div>
-            <div class="px-5 pt-5"> <!-- Pertemuan 9 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 9 | Define & Ideation / SCAMPER
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Rabu, 22/11/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-secondary gap-2">
-                                Presensi belum dibuka
+                    <div class="px-5 pt-5"> <!-- Pertemuan 7 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 7 | Emphaty Map
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Kamis, 09/11/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-secondary gap-2">
+                                        Presensi belum dibuka
+                                    </div>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
                             </div>
                         </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
                     </div>
-                </div>
-            </div>
-            <div class="px-5 pt-5"> <!-- Pertemuan 10 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 10 | Metode Pemilihan Ideation
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Kamis, 23/11/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-secondary gap-2">
-                                Presensi belum dibuka
+                    <div class="px-5 pt-5"> <!-- Pertemuan 8 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 8 | UTS & Define
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Rabu, 22/11/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-secondary gap-2">
+                                        Presensi belum dibuka
+                                    </div>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
                             </div>
                         </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
                     </div>
-                </div>
-            </div>
-            <div class="px-5 pt-5"> <!-- Pertemuan 11 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 11 | Thinking Out of The Box
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Kamis, 30/11/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-secondary gap-2">
-                                Presensi belum dibuka
+                    <div class="px-5 pt-5"> <!-- Pertemuan 9 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 9 | Define & Ideation / SCAMPER
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Rabu, 22/11/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-secondary gap-2">
+                                        Presensi belum dibuka
+                                    </div>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
                             </div>
                         </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
                     </div>
-                </div>
-            </div>
-            <div class="px-5 pt-5"> <!-- Pertemuan 12 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 12 | Prototype
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Rabu, 06/12/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-secondary gap-2">
-                                Presensi belum dibuka
+                    <div class="px-5 pt-5"> <!-- Pertemuan 10 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 10 | Metode Pemilihan Ideation
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Kamis, 23/11/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-secondary gap-2">
+                                        Presensi belum dibuka
+                                    </div>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
                             </div>
                         </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
                     </div>
-                </div>
-            </div>
-            <div class="px-5 pt-5"> <!-- Pertemuan 13 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 13 | Test
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Kamis, 14/12/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-secondary gap-2">
-                                Presensi belum dibuka
+                    <div class="px-5 pt-5"> <!-- Pertemuan 11 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 11 | Thinking Out of The Box
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Kamis, 30/11/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-secondary gap-2">
+                                        Presensi belum dibuka
+                                    </div>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
                             </div>
                         </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
                     </div>
-                </div>
-            </div>
-            <div class="px-5 pt-5"> <!-- Pertemuan 14 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 14 | Implement
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Kamis, 14/12/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-secondary gap-2">
-                                Presensi belum dibuka
+                    <div class="px-5 pt-5"> <!-- Pertemuan 12 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 12 | Prototype
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Rabu, 06/12/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-secondary gap-2">
+                                        Presensi belum dibuka
+                                    </div>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
                             </div>
                         </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
                     </div>
-                </div>
-            </div>
-            <div class="px-5 pt-5"> <!-- Pertemuan 15 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 15 | Review Materi Pertemuan 2 - 14
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Kamis, 04/01/2024<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-secondary gap-2">
-                                Presensi belum dibuka
+                    <div class="px-5 pt-5"> <!-- Pertemuan 13 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 13 | Test
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Kamis, 14/12/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-secondary gap-2">
+                                        Presensi belum dibuka
+                                    </div>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
                             </div>
                         </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
                     </div>
-                </div>
-            </div>
-            <div class="px-5 pt-5"> <!-- Pertemuan 16 -->
-                <div class="collapse collapse-arrow border-t border-x border-blue-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
-                        Pertemuan - 16 | UAS
-                    </div>
-                    <div class="collapse-content bg-base-100 border-b border-b-blue-300">
-                        <div class="divider divider-info">Pembahasan</div>
-                        <div class="mt-4">
-                            Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
-                            <ul class="list-disc ml-5">
-                                <li>Peraturan kelas yang akan disepakati.</li>
-                                <li>Gambaran tugas-tugas yang akan diberikan.</li>
-                                <li>Aturan bobot nilai dalam perkuliahan.</li>
-                                <li>Materi pengantar Design Thinking.</li>
-                            </ul><br/>
-                            Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
-                            <ul class="list-decimal ml-5">
-                                <li>Berdoa.</li>
-                                <li>Isi daftar kehadiran.</li>
-                                <li>Pelajari Materi yang disediakan.</li>
-                                <li>Mengikuti tatap muka kelas.</li>
-                                <li>Mengerjakan Quiz.</li>
-                                <li>Mengisi Umpan Balik.</li>
-                            </ul>
-                        </div>
-                        <div class="divider divider-info">Presensi</div>
-                        <div class="mt-4">
-                            Kamis, 11/01/2024<br/>08:00 ~ 08:15 WIB<br/><br/>
-                            Status Presensi: 
-                            <div class="badge badge-secondary gap-2">
-                                Presensi belum dibuka
+                    <div class="px-5 pt-5"> <!-- Pertemuan 14 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 14 | Implement
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Kamis, 14/12/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-secondary gap-2">
+                                        Presensi belum dibuka
+                                    </div>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
                             </div>
                         </div>
-                        <div class="divider divider-info">Dokumen Pendukung</div>
-                        <ul class="list-disc ml-5">
-                            <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
-                            <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
-                        </ul><br/>
+                    </div>
+                    <div class="px-5 pt-5"> <!-- Pertemuan 15 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 15 | Review Materi Pertemuan 2 - 14
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Kamis, 04/01/2024<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-secondary gap-2">
+                                        Presensi belum dibuka
+                                    </div>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pt-5"> <!-- Pertemuan 16 -->
+                        <div class="collapse collapse-arrow border-t border-x border-blue-300">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title text-sm sm:text-xl font-medium border-b border-blue-300">
+                                Pertemuan - 16 | UAS
+                            </div>
+                            <div class="collapse-content bg-base-100 border-b border-b-blue-300">
+                                <div class="divider divider-info">Pembahasan</div>
+                                <div class="mt-4">
+                                    Salam Budi Luhur, pertemuan kali ini akan membahas mengenai:
+                                    <ul class="list-disc ml-5">
+                                        <li>Peraturan kelas yang akan disepakati.</li>
+                                        <li>Gambaran tugas-tugas yang akan diberikan.</li>
+                                        <li>Aturan bobot nilai dalam perkuliahan.</li>
+                                        <li>Materi pengantar Design Thinking.</li>
+                                    </ul><br/>
+                                    Silakan ikuti langkah berikut sebelum memulai pembahasan pertemukan kali ini:
+                                    <ul class="list-decimal ml-5">
+                                        <li>Berdoa.</li>
+                                        <li>Isi daftar kehadiran.</li>
+                                        <li>Pelajari Materi yang disediakan.</li>
+                                        <li>Mengikuti tatap muka kelas.</li>
+                                        <li>Mengerjakan Quiz.</li>
+                                        <li>Mengisi Umpan Balik.</li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-info">Presensi</div>
+                                <div class="mt-4">
+                                    Kamis, 11/01/2024<br/>08:00 ~ 08:15 WIB<br/><br/>
+                                    Status Presensi: 
+                                    <div class="badge badge-secondary gap-2">
+                                        Presensi belum dibuka
+                                    </div>
+                                </div>
+                                <div class="divider divider-info">Dokumen Pendukung</div>
+                                <ul class="list-disc ml-5">
+                                    <li><a class="link link-base" href="sample/sample-pdf-1.pdf" target="_blank">Materi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-2.pdf" target="_blank">Presentasi</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-3.pdf" target="_blank">Tugas - A</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-4.pdf" target="_blank">Tugas - B</a></li>
+                                    <li><a class="link link-base" href="sample/sample-pdf-5.pdf" target="_blank">Tugas - C</a></li>
+                                </ul><br/>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- End of Content -->
+
+                <!-- Hidden Stuff -->
+                <dialog id="modal_info" class="modal">
+                    <div class="modal-box">
+                      <form method="dialog">
+                        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                      </form>
+                      <h3 class="font-bold text-lg">Informasi Prototype</h3>
+                      <p class="py-4">
+                        Prototype ini dibuat untuk percobaan implementasi Design Thingking dalam membuat ulang design aplikasi
+                        berbasis web.
+                    </p>
+                    </div>
+                </dialog>
+            </div> 
+            <div class="drawer-side z-[9999]">
+				<label for="my-drawer-3" class="drawer-overlay"></label> 
+				<!-- Sidebar content -->
+				<ul class="menu p-4 w-50 min-h-full bg-base-200">
+					<div class="flex flex-row">
+						<div class="basis-3/4 self-center">
+							Menu
+						</div>
+						<div class="basis-1/4">
+							<label for="my-drawer-3" class="btn btn-sm btn-circle float-right">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+							</label>
+						</div>
+					</div>
+					<li><a onclick="modal_info.showModal()">
+						<svg class="h-6 w-6 text-base"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z"/>  
+							<path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />  
+							<line x1="12" y1="11" x2="12" y2="11.01" />  
+							<line x1="8" y1="11" x2="8" y2="11.01" />  
+							<line x1="16" y1="11" x2="16" y2="11.01" />
+						</svg>
+						Proses Emphaty
+					</a></li>
+					<li><a onclick="modal_info.showModal()">
+						<svg class="h-6 w-6 text-base"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/>
+						</svg>
+						
+						Emphaty Map
+					</a></li>
+					<li><a onclick="modal_info.showModal()">
+						<svg class="h-6 w-6 text-base"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z"/>
+							<path d="M3.5 5.5l1.5 1.5l2.5 -2.5" />
+							<path d="M3.5 11.5l1.5 1.5l2.5 -2.5" />
+							<path d="M3.5 17.5l1.5 1.5l2.5 -2.5" />
+							<line x1="11" y1="6" x2="20" y2="6" />
+							<line x1="11" y1="12" x2="20" y2="12" />
+							<line x1="11" y1="18" x2="20" y2="18" />
+						</svg>
+						Proses Define
+					</a></li>
+					<li><a onclick="modal_info.showModal()">
+						<svg class="h-6 w-6 text-base"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z"/> 
+							<path d="M3 12h1M12 3v1M20 12h1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7" /> 
+							<path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" />
+							<line x1="9.7" y1="17" x2="14.3" y2="17" />
+						</svg>
+						Proses Ideation
+					</a></li>
+					<li><a onclick="modal_info.showModal()">
+						<svg class="h-6 w-6 text-base" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10" />
+							<line x1="12" y1="16" x2="12" y2="12" />
+							<line x1="12" y1="8" x2="12.01" y2="8" />
+						</svg>
+						Informasi Prototype
+					</a></li>
+					<li><a>
+						<svg class="h-6 w-6 text-base"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"> 
+							<circle cx="12" cy="12" r="10" />
+							<polyline points="12 8 8 12 12 16" />
+							<line x1="16" y1="12" x2="8" y2="12" />
+						</svg>
+						Kembali ke Portfolio
+					</a></li>
+				</ul>
+			<!-- End of sidebar content -->
             </div>
         </div>
-        <dialog id="modal_info" class="modal">
-            <div class="modal-box">
-              <form method="dialog">
-                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-              </form>
-              <h3 class="font-bold text-lg">Informasi Prototype</h3>
-              <p class="py-4">
-                Prototype ini dibuat untuk percobaan implementasi Design Thingking dalam membuat ulang design aplikasi
-                berbasis web.
-            </p>
-            </div>
-          </dialog>
     </body>
 </html>
