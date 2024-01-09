@@ -3,6 +3,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     </head>
     <body class="bg-base-200">
         <div class="drawer">
@@ -25,6 +26,31 @@
                     </div>
                 <!-- End of Navbar -->
                 <!-- Content -->
+                    <div class="px-5 mt-5">
+                        <div class="flex w-full">
+                            <div class="border grow">
+                                <label class="form-control w-full">
+                                    <input type="text" name="searching" placeholder="Cari materi..." class="input input-bordered w-full" />
+                                </label>
+                            </div>
+                            <div class="flex">
+                                <div>
+                                    <button class="btn btn-square">
+                                        <svg class="h-5 w-5"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                        </svg>                                      
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="btn btn-square ml-2">
+                                        <svg class="h-5 w-5"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"> 
+                                            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
                     <div class="divider divider-info px-5">Pendahuluan</div>
                     <div class="px-5"> <!-- Tentang Design Thinking -->
                         <div class="collapse collapse-arrow border-t border-x border-blue-300">
@@ -808,14 +834,14 @@
                 <!-- Hidden Stuff -->
                 <dialog id="modal_info" class="modal">
                     <div class="modal-box">
-                      <form method="dialog">
-                        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                      </form>
-                      <h3 class="font-bold text-lg">Informasi Prototype</h3>
-                      <p class="py-4">
-                        Prototype ini dibuat untuk percobaan implementasi Design Thingking dalam membuat ulang design aplikasi
-                        berbasis web.
-                    </p>
+                        <form method="dialog">
+                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        </form>
+                        <h3 class="font-bold text-lg">Informasi Prototype</h3>
+                        <p class="py-4">
+                            Prototype ini dibuat untuk percobaan implementasi Design Thingking dalam membuat ulang design aplikasi
+                            berbasis web.
+                        </p>
                     </div>
                 </dialog>
             </div> 
