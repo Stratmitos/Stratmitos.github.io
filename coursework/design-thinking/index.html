@@ -45,7 +45,7 @@
                                     </button>
                                 </div>
                                 <div>
-                                    <button id="btn-filter" class="btn btn-square ml-2">
+                                    <button id="btn-filter" class="btn btn-square ml-2" onclick="modal_filter.showModal()">
                                         <svg class="h-5 w-5"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"> 
                                             <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
                                         </svg>
@@ -130,6 +130,49 @@
                             Prototype ini dibuat untuk percobaan implementasi Design Thingking dalam membuat ulang design aplikasi
                             berbasis web.
                         </p>
+                    </div>
+                </dialog>
+
+                <dialog id="modal_filter" class="modal">
+                    <div class="modal-box">
+                        <form method="dialog">
+                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        </form>
+                        <h3 class="font-bold text-lg">Filter Materi</h3>
+                        <label class="form-control w-full mb-5">
+                            <div class="label">
+                              <span class="label-text">Berdasarkan Pertemuan</span>
+                            </div>
+                            <select class="select select-bordered">
+                                <option disabled selected>Pertemuan ke...</option>
+                                <option>Star Wars</option>
+                                <option>Harry Potter</option>
+                                <option>Lord of the Rings</option>
+                                <option>Planet of the Apes</option>
+                                <option>Star Trek</option>
+                            </select>
+                        </label>
+                        <label class="form-control w-full">
+                            <div class="label">
+                              <span class="label-text">Berdasarkan Antara Pertemuan</span>
+                            </div>
+                            <select class="select select-bordered mb-1">
+                                <option disabled selected>Dari pertemuan...</option>
+                                <option>Star Wars</option>
+                                <option>Harry Potter</option>
+                                <option>Lord of the Rings</option>
+                                <option>Planet of the Apes</option>
+                                <option>Star Trek</option>
+                            </select>
+                            <select class="select select-bordered">
+                                <option disabled selected>Sampai pertemuan...</option>
+                                <option>Star Wars</option>
+                                <option>Harry Potter</option>
+                                <option>Lord of the Rings</option>
+                                <option>Planet of the Apes</option>
+                                <option>Star Trek</option>
+                            </select>
+                        </label>
                     </div>
                 </dialog>
             </div> 
