@@ -21,6 +21,8 @@ let course = {
 };
 
 $(function() {
+    const elSubjectList = $('#subject-list-component');
+    const elSubjectLoading = $('#subject-list-loading');
     loadSubject();
 
     $('.btn-find').on('click', function () {
@@ -30,11 +32,16 @@ $(function() {
             course[selectedCourse][iCourse].isHidden = searchResult === null;
         });
 
+        $(elSubjectList).hide();
+        $(elSubjectLoading).show();
         loadSubject();
+        setTimeout(function() {
+            $(elSubjectList).show();
+            $(elSubjectLoading).hide();
+        }, 1750);
     });
 
     function loadSubject() {
-        const elSubjectList = $('#subject-list-component');
         elSubjectList.html('');
         course[selectedCourse].forEach(function (vCourse, iCourse) {
             if (! vCourse.isHidden) {
