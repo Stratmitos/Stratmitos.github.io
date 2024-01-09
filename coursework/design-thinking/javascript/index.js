@@ -4,25 +4,26 @@ const PRESENCE_ILLNESS = 2;
 const PRESENCE_UNABLE_ATTEND = 3;
 const PRESENCE_EMPTY = 4;
 const PRESENCE_LOCKED = 5;
+
 let selectedCourse = "dethink";
 let course = {
     dethink: [
-        {encounter: 1, isHidden: false, presence: PRESENCE_PRESENT, date: "Kamis, 05/10/2023", time:"08:00 ~ 08:15 WIB", subject: "Pengantar Design Thinking"},
-        {encounter: 2, isHidden: false, presence: PRESENCE_ALPHA, date: "Kamis, 12/10/2023", time:"08:00 ~ 08:15 WIB", subject: "Filosofi, Prinsip & Tahapan Design Thingking"},
-        {encounter: 3, isHidden: false, presence: PRESENCE_EMPTY, date: "Rabu, 18/10/2023", time:"08:00 ~ 08:15 WIB", subject: "Inovasi"},
-        {encounter: 4, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 19/10/2023", time:"08:00 ~ 08:15 WIB", subject: "Tahapan Design Thingking"},
-        {encounter: 5, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 26/10/2023", time:"08:00 ~ 08:15 WIB", subject: "Personas"},
-        {encounter: 6, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 02/11/2023", time:"08:00 ~ 08:15 WIB", subject: "Emphatize"},
-        {encounter: 7, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 09/11/2023", time:"08:00 ~ 08:15 WIB", subject: "Emphaty Map"},
-        {encounter: 8, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 16/11/2023", time:"08:00 ~ 08:15 WIB", subject: "UTS & Define"},
-        {encounter: 9, isHidden: false, presence: PRESENCE_LOCKED, date: "Rabu, 22/11/2023", time:"08:00 ~ 08:15 WIB", subject: "Define & Idetaion / SCAMPER"},
-        {encounter: 10, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 23/10/2023", time:"08:00 ~ 08:15 WIB", subject: "Metode Pemilihan Ideation"},
-        {encounter: 11, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 30/11/2023", time:"08:00 ~ 08:15 WIB", subject: "Thingking Out of The box"},
-        {encounter: 12, isHidden: false, presence: PRESENCE_LOCKED, date: "Rabu, 06/12/2023", time:"08:00 ~ 08:15 WIB", subject: "Prototype"},
-        {encounter: 13, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 07/12/2023", time:"08:00 ~ 08:15 WIB", subject: "Test"},
-        {encounter: 14, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 14/12/2023", time:"08:00 ~ 08:15 WIB", subject: "Implement"},
-        {encounter: 15, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 04/01/2024", time:"08:00 ~ 08:15 WIB", subject: "Review Materi Pertemuan 2 - 14"},
-        {encounter: 16, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 11/01/2024", time:"08:00 ~ 08:15 WIB", subject: "UAS"},
+        {encounter: 1, isHidden: false, presence: PRESENCE_PRESENT, date: "Kamis, 05/10/2023", time: "08:00 ~ 08:15 WIB", subject: "Pengantar Design Thinking"},
+        {encounter: 2, isHidden: false, presence: PRESENCE_ALPHA, date: "Kamis, 12/10/2023", time: "08:00 ~ 08:15 WIB", subject: "Filosofi, Prinsip & Tahapan Design Thingking"},
+        {encounter: 3, isHidden: false, presence: PRESENCE_EMPTY, date: "Rabu, 18/10/2023", time: "08:00 ~ 08:15 WIB", subject: "Inovasi"},
+        {encounter: 4, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 19/10/2023", time: "08:00 ~ 08:15 WIB", subject: "Tahapan Design Thingking"},
+        {encounter: 5, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 26/10/2023", time: "08:00 ~ 08:15 WIB", subject: "Personas"},
+        {encounter: 6, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 02/11/2023", time: "08:00 ~ 08:15 WIB", subject: "Emphatize"},
+        {encounter: 7, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 09/11/2023", time: "08:00 ~ 08:15 WIB", subject: "Emphaty Map"},
+        {encounter: 8, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 16/11/2023", time: "08:00 ~ 08:15 WIB", subject: "UTS & Define"},
+        {encounter: 9, isHidden: false, presence: PRESENCE_LOCKED, date: "Rabu, 22/11/2023", time: "08:00 ~ 08:15 WIB", subject: "Define & Idetaion / SCAMPER"},
+        {encounter: 10, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 23/10/2023", time: "08:00 ~ 08:15 WIB", subject: "Metode Pemilihan Ideation"},
+        {encounter: 11, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 30/11/2023", time: "08:00 ~ 08:15 WIB", subject: "Thingking Out of The box"},
+        {encounter: 12, isHidden: false, presence: PRESENCE_LOCKED, date: "Rabu, 06/12/2023", time: "08:00 ~ 08:15 WIB", subject: "Prototype"},
+        {encounter: 13, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 07/12/2023", time: "08:00 ~ 08:15 WIB", subject: "Test"},
+        {encounter: 14, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 14/12/2023", time: "08:00 ~ 08:15 WIB", subject: "Implement"},
+        {encounter: 15, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 04/01/2024", time: "08:00 ~ 08:15 WIB", subject: "Review Materi Pertemuan 2 - 14"},
+        {encounter: 16, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 11/01/2024", time: "08:00 ~ 08:15 WIB", subject: "UAS"},
     ]
 };
 
