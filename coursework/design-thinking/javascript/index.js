@@ -1,41 +1,53 @@
+const PRESENCE_ALPHA = 0;
+const PRESENCE_PRESENT = 1;
+const PRESENCE_ILLNESS = 2;
+const PRESENCE_UNABLE_ATTEND = 3;
+const PRESENCE_EMPTY = 4;
+const PRESENCE_LOCKED = 5;
 let selectedCourse = "dethink";
 let course = {
     dethink: [
-        {encounter: 1, isHidden: false, subject: "Pengantar Design Thinking"},
-        {encounter: 2, isHidden: false, subject: "Filosofi, Prinsip & Tahapan Design Thingking"},
-        {encounter: 3, isHidden: false, subject: "Inovasi"},
-        {encounter: 4, isHidden: false, subject: "Tahapan Design Thingking"},
-        {encounter: 5, isHidden: false, subject: "Personas"},
-        {encounter: 6, isHidden: false, subject: "Emphatize"},
-        {encounter: 7, isHidden: false, subject: "Emphaty Map"},
-        {encounter: 8, isHidden: false, subject: "UTS & Define"},
-        {encounter: 9, isHidden: false, subject: "Define & Idetaion / SCAMPER"},
-        {encounter: 10, isHidden: false, subject: "Metode Pemilihan Ideation"},
-        {encounter: 11, isHidden: false, subject: "Thingking Out of The box"},
-        {encounter: 12, isHidden: false, subject: "Prototype"},
-        {encounter: 13, isHidden: false, subject: "Test"},
-        {encounter: 14, isHidden: false, subject: "Implement"},
-        {encounter: 15, isHidden: false, subject: "Review Materi Pertemuan 2 - 14"},
-        {encounter: 16, isHidden: false, subject: "UAS"},
+        {encounter: 1, isHidden: false, presence: PRESENCE_PRESENT, date: "Kamis, 05/10/2023", time:"08:00 ~ 08:15 WIB", subject: "Pengantar Design Thinking"},
+        {encounter: 2, isHidden: false, presence: PRESENCE_ALPHA, date: "Kamis, 12/10/2023", time:"08:00 ~ 08:15 WIB", subject: "Filosofi, Prinsip & Tahapan Design Thingking"},
+        {encounter: 3, isHidden: false, presence: PRESENCE_EMPTY, date: "Rabu, 18/10/2023", time:"08:00 ~ 08:15 WIB", subject: "Inovasi"},
+        {encounter: 4, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 19/10/2023", time:"08:00 ~ 08:15 WIB", subject: "Tahapan Design Thingking"},
+        {encounter: 5, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 26/10/2023", time:"08:00 ~ 08:15 WIB", subject: "Personas"},
+        {encounter: 6, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 02/11/2023", time:"08:00 ~ 08:15 WIB", subject: "Emphatize"},
+        {encounter: 7, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 09/11/2023", time:"08:00 ~ 08:15 WIB", subject: "Emphaty Map"},
+        {encounter: 8, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 16/11/2023", time:"08:00 ~ 08:15 WIB", subject: "UTS & Define"},
+        {encounter: 9, isHidden: false, presence: PRESENCE_LOCKED, date: "Rabu, 22/11/2023", time:"08:00 ~ 08:15 WIB", subject: "Define & Idetaion / SCAMPER"},
+        {encounter: 10, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 23/10/2023", time:"08:00 ~ 08:15 WIB", subject: "Metode Pemilihan Ideation"},
+        {encounter: 11, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 30/11/2023", time:"08:00 ~ 08:15 WIB", subject: "Thingking Out of The box"},
+        {encounter: 12, isHidden: false, presence: PRESENCE_LOCKED, date: "Rabu, 06/12/2023", time:"08:00 ~ 08:15 WIB", subject: "Prototype"},
+        {encounter: 13, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 07/12/2023", time:"08:00 ~ 08:15 WIB", subject: "Test"},
+        {encounter: 14, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 14/12/2023", time:"08:00 ~ 08:15 WIB", subject: "Implement"},
+        {encounter: 15, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 04/01/2024", time:"08:00 ~ 08:15 WIB", subject: "Review Materi Pertemuan 2 - 14"},
+        {encounter: 16, isHidden: false, presence: PRESENCE_LOCKED, date: "Kamis, 11/01/2024", time:"08:00 ~ 08:15 WIB", subject: "UAS"},
     ]
 };
 
 $(function() {
     const elSubjectList = $('#subject-list-component');
     const elSubjectLoading = $('#subject-list-loading');
+    const elBtnSearching = $('#btn-find');
+    const elBtnFilter = $('#btn-filter');
     loadSubject();
 
-    $('.btn-find').on('click', function () {
+    $(elBtnSearching).on('click', function () {
         let searchVal = $('input[name="searching"]').val().toLowerCase();
         course[selectedCourse].forEach(function (vCourse, iCourse) {
             let searchResult = vCourse.subject.toLowerCase().match(searchVal);
             course[selectedCourse][iCourse].isHidden = searchResult === null;
         });
 
+        $(elBtnSearching).prop('disabled', true);
+        $(elBtnFilter).prop('disabled', true);
         $(elSubjectList).hide();
         $(elSubjectLoading).show();
         loadSubject();
         setTimeout(function() {
+            $(elBtnSearching).prop('disabled', false);
+            $(elBtnFilter).prop('disabled', false);
             $(elSubjectList).show();
             $(elSubjectLoading).hide();
         }, 1750);
@@ -43,7 +55,7 @@ $(function() {
 
     function loadSubject() {
         elSubjectList.html('');
-        course[selectedCourse].forEach(function (vCourse, iCourse) {
+        course[selectedCourse].forEach(function (vCourse) {
             if (! vCourse.isHidden) {
                 elSubjectList.append(`
                     <div class="px-5 pb-5">
@@ -74,11 +86,8 @@ $(function() {
                                 </div>
                                 <div class="divider divider-info">Presensi</div>
                                 <div class="mt-4">
-                                    Kamis, 05/10/2023<br/>08:00 ~ 08:15 WIB<br/><br/>
-                                    Status Presensi: 
-                                    <div class="badge badge-success gap-2">
-                                        HADIR
-                                    </div>
+                                    ${vCourse.date}<br/>${vCourse.time}<br/><br/>
+                                    ${showStatusPresence(vCourse.presence)}
                                 </div>
                                 <div class="divider divider-info">Dokumen Pendukung</div>
                                 <ul class="list-disc ml-5">
@@ -94,5 +103,34 @@ $(function() {
                 `);
             }
         });
+    }
+
+    function showStatusPresence(vPresence) {
+        let statusPresence = "HADIR";
+        let colorPresence = "badge-success";
+
+        if (vPresence == PRESENCE_ALPHA) {
+            statusPresence = "TIDAK HADIR";
+            colorPresence = "badge-error";
+        } else if (vPresence == PRESENCE_ILLNESS) {
+            statusPresence = "SAKIT";
+            colorPresence = "badge-danger";
+        } else if (vPresence == PRESENCE_UNABLE_ATTEND) {
+            statusPresence = "IZIN";
+            colorPresence = "badge-danger";
+        } else if (vPresence == PRESENCE_EMPTY) {
+            statusPresence = "Belum Mengisi Presensi";
+            colorPresence = "badge-info";
+        } else if (vPresence == PRESENCE_LOCKED) {
+            statusPresence = "Presensi belum dibuka.";
+            colorPresence = "badge-secondary";
+        }
+
+        return `
+            Status Presensi: 
+            <div class="badge ${colorPresence} gap-2">
+                ${statusPresence}
+            </div>
+        `;
     }
 });
