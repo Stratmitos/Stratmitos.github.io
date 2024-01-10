@@ -6,6 +6,8 @@ const PRESENCE_EMPTY = 4;
 const PRESENCE_LOCKED = 5;
 
 let selectedCourse = "dethink";
+let filterEncounterStartVal = 0;
+let filterEncounterEndVal = 0;
 let course = {
     dethink: [
         {encounter: 1, isHidden: false, presence: PRESENCE_PRESENT, date: "Kamis, 05/10/2023", time: "08:00 ~ 08:15 WIB", subject: "Pengantar Design Thinking"},
@@ -30,28 +32,80 @@ let course = {
 $(function() {
     const elSubjectList = $('#subject-list-component');
     const elSubjectLoading = $('#subject-list-loading');
+    const elSubjectNotFound = $('#subject-list-not-found');
+    const elSearching = $('input[name="searching"]');
     const elBtnSearching = $('#btn-find');
-    const elBtnFilter = $('#btn-filter');
+    const elBtnOpenModalFilter = $('#btn-open-filter');
+    const elFilterEncounterStart = $('input[name="filter-by-encounter-start"]');
+    const elFilterEncounterEnd = $('input[name="filter-by-encounter-end"]');
+    const elBtnModalFilter = $('#btn-filter');
+    const elBtnResetFilter = $('#btn-reset-filter');
     loadSubject();
 
     $(elBtnSearching).on('click', function () {
-        let searchVal = $('input[name="searching"]').val().toLowerCase();
+        let searchVal = elSearching.val().toLowerCase();
+        let isHiddenVal = true;
+        let totalHidden = 0;
         course[selectedCourse].forEach(function (vCourse, iCourse) {
             let searchResult = vCourse.subject.toLowerCase().match(searchVal);
-            course[selectedCourse][iCourse].isHidden = searchResult === null;
+            if (filterEncounterStartVal == 0 && filterEncounterEndVal == 0) {
+                isHiddenVal = searchResult === null;
+            } else if (vCourse.encounter >= filterEncounterStartVal && vCourse.encounter <= filterEncounterEndVal) {
+                isHiddenVal = searchResult === null;
+            } else {
+                isHiddenVal = true;
+            }
+
+            course[selectedCourse][iCourse].isHidden = isHiddenVal;
+            if (isHiddenVal == true) {
+                totalHidden ++;
+            }
         });
 
         $(elBtnSearching).prop('disabled', true);
-        $(elBtnFilter).prop('disabled', true);
+        $(elBtnOpenModalFilter).prop('disabled', true);
         $(elSubjectList).hide();
+        elSubjectNotFound.hide();
         $(elSubjectLoading).show();
         loadSubject();
         setTimeout(function() {
             $(elBtnSearching).prop('disabled', false);
-            $(elBtnFilter).prop('disabled', false);
-            $(elSubjectList).show();
+            $(elBtnOpenModalFilter).prop('disabled', false);
             $(elSubjectLoading).hide();
+
+            if (totalHidden == getLatestIndexCourse()) {
+                elSubjectNotFound.show();
+            } else {
+                $(elSubjectList).show();
+            }
         }, 1750);
+    });
+
+    $(elBtnModalFilter).on('click', function () {
+        filterEncounterStartVal = parseInt(elFilterEncounterStart.val());
+        filterEncounterEndVal = parseInt(elFilterEncounterEnd.val());
+
+        filterEncounterStartVal = isNaN(filterEncounterStartVal) ? 0 : filterEncounterStartVal;
+        filterEncounterEndVal = isNaN(filterEncounterEndVal) ? 0 : filterEncounterEndVal;
+
+        if (filterEncounterStartVal != 0 && filterEncounterEndVal == 0) {
+            let latestIndexCourse = getLatestIndexCourse() - 1;
+            filterEncounterEndVal = course[selectedCourse][latestIndexCourse].encounter;
+        } else if (filterEncounterStartVal == 0 && filterEncounterEndVal != 0) {
+            filterEncounterStartVal = 0;
+        }
+
+        elBtnSearching.trigger("click");
+    });
+
+    $(elBtnResetFilter).on('click', function () {
+        filterEncounterStartVal = 0;
+        filterEncounterEndVal = 0;
+        elFilterEncounterStart.val("");
+        elFilterEncounterEnd.val("");
+        elSearching.val("");
+
+        elBtnSearching.trigger("click");
     });
 
     function loadSubject() {
@@ -104,6 +158,10 @@ $(function() {
                 `);
             }
         });
+    }
+
+    function getLatestIndexCourse() {
+        return course[selectedCourse].length;
     }
 
     function showStatusPresence(vPresence) {
