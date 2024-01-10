@@ -33,19 +33,19 @@
                         <div class="flex w-full">
                             <div class="border grow">
                                 <label class="form-control w-full">
-                                    <input type="text" name="searching" placeholder="Cari materi..." class="input input-bordered w-full" />
+                                    <input type="text" name="searching" placeholder="Cari materi..." class="input input-bordered input-info w-full" />
                                 </label>
                             </div>
                             <div class="flex">
-                                <div>
-                                    <button id="btn-find" class="btn btn-square">
+                                <div class="my-auto">
+                                    <button id="btn-find" class="btn btn-outline btn-square btn-success">
                                         <svg class="h-5 w-5"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                                         </svg>                                      
                                     </button>
                                 </div>
-                                <div>
-                                    <button id="btn-filter" class="btn btn-square ml-2">
+                                <div class="my-auto">
+                                    <button id="btn-open-filter" class="btn btn-outline btn-square btn-info ml-2" onclick="modal_filter.showModal()">
                                         <svg class="h-5 w-5"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"> 
                                             <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
                                         </svg>
@@ -116,6 +116,9 @@
                         <span class="loading loading-bars loading-md"></span><br/>
                         Mencari Materi...
                     </div>
+                    <div id="subject-list-not-found" class="text-center" style="display: none;">
+                        Materi tidak ditemukan.
+                    </div>
                 </div>
                 <!-- End of Content -->
 
@@ -130,6 +133,41 @@
                             Prototype ini dibuat untuk percobaan implementasi Design Thingking dalam membuat ulang design aplikasi
                             berbasis web.
                         </p>
+                    </div>
+                </dialog>
+
+                <dialog id="modal_filter" class="modal">
+                    <div class="modal-box">
+                        <form method="dialog">
+                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        </form>
+                        <h3 class="font-bold text-lg">Filter Materi</h3>
+                        <label class="form-control w-full">
+                            <div class="label">
+                              <span class="label-text">Antara Pertemuan</span>
+                            </div>
+                            <label class="form-control w-full">
+                                <input type="number" name="filter-by-encounter-start" placeholder="Dari angka pertemuan..." class="input input-bordered input-info w-full" />
+                            </label>
+                            <label class="form-control w-full mt-5">
+                                <input type="number" name="filter-by-encounter-end" placeholder="Sampai angka pertemuan..." class="input input-bordered input-info w-full" />
+                            </label>
+                        </label>
+                        <form method="dialog">
+                            <button id="btn-filter" class="btn btn-outline btn-success mt-5">
+                                <svg class="h-5 w-5"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                </svg> 
+                                Cari
+                            </button>
+                            <button id="btn-reset-filter" class="btn btn-outline btn-info mt-5">
+                                <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -5v5h5" />
+                                    <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 5v-5h-5" />
+                                </svg>
+                                Reset
+                            </button>
+                        </form>
                     </div>
                 </dialog>
             </div> 
