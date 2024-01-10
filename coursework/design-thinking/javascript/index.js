@@ -40,7 +40,17 @@ $(function() {
     const elFilterEncounterEnd = $('input[name="filter-by-encounter-end"]');
     const elBtnModalFilter = $('#btn-filter');
     const elBtnResetFilter = $('#btn-reset-filter');
+    const elBaseHtml = $('#base-html');
     loadSubject();
+
+    $('#theme-toggle').on('click', function () {
+        let currentTheme = elBaseHtml.attr('data-theme');
+        if (currentTheme == 'business') {
+            elBaseHtml.attr('data-theme', 'corporate');
+        } else {
+            elBaseHtml.attr('data-theme', 'business');
+        }
+    });
 
     $(elBtnSearching).on('click', function () {
         let searchVal = elSearching.val().toLowerCase();
